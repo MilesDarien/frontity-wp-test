@@ -1,57 +1,43 @@
 const settings = {
-  "name": "my-frontity",
-  "state": {
-    "frontity": {
-      "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
-    }
+  name: "my-frontity",
+  state: {
+    frontity: {
+      url: "https://test.frontity.org",
+      title: "Test Frontity Blog",
+      description: "WordPress installation for Frontity development",
+    },
   },
-  "packages": [
+  packages: [
+    // add menu items in frontity-settings.js
     {
-      "name": "@frontity/mars-theme",
-      "state": {
-        "theme": {
-          "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
+      name: "@frontity/mars-theme",
+      state: {
+        theme: {
+          menu: [
+            ["Home", "/"],
+            ["Block", "/category/block/"],
+            ["Classic", "/category/classic/"],
+            ["Alignments", "/tag/alignment-2/"],
+            ["About", "/about/"],
           ],
-          "featured": {
-            "showOnList": false,
-            "showOnPost": false
-          }
-        }
-      }
+          featured: {
+            showOnList: true,
+            showOnPost: true,
+          },
+        },
+      },
     },
     {
-      "name": "@frontity/wp-source",
-      "state": {
-        "source": {
-          "url": "https://test.frontity.org"
-        }
-      }
+      name: "@frontity/wp-source",
+      state: {
+        source: {
+          api: "http://frontity-test.local/wp-json",
+        },
+      },
     },
     "@frontity/tiny-router",
-    "@frontity/html2react"
-  ]
+    "@frontity/html2react",
+  ],
 };
 
 export default settings;

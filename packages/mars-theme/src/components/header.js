@@ -34,6 +34,7 @@ const Container = styled.div`
 
 const Title = styled.h2`
   margin: 0;
+  font-size: 5rem;
   margin-bottom: 16px;
 `;
 
