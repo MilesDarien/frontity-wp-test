@@ -31,7 +31,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          api: "http://frontity-test.local/wp-json",
+          api: "https://unleisured-moons.000webhostapp.com/wp-json",
         },
       },
     },
