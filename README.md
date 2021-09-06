@@ -1,4 +1,5 @@
-# my-frontity
+# WP-frontity test
+https://my-frontity-three.vercel.app
 
 This project was bootstrapped with [Frontity](https://frontity.org/).
 
